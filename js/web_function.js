@@ -121,5 +121,35 @@ function printData(data) {
     $travelCard_list.innerHTML = str;
 }
 
+const $ticketSubmit = document.querySelector('#ticketSubmit');
+const $ticketName = document.querySelector('#ticketName');
+const $ticketImgUrl = document.querySelector('#ticketImgUrl');
+const $ticketArea = document.querySelector('#ticketArea');
+const $ticketPrice = document.querySelector('#ticketPrice');
+const $ticketRemaining = document.querySelector('#ticketRemaining');
+const $ticketIntroduction = document.querySelector('#ticketIntroduction');
+const $ticketScore = document.querySelector('#ticketScore');
+
+$ticketSubmit.addEventListener('click',function (e) {
+    e.preventDefault()
+    addData() 
+})
+
+const form = document.querySelector('.form');
+
+function addData() {
+    let inputData = {};
+    inputData.title = $ticketName.value.trim()
+    inputData.img = $ticketImgUrl.value.trim()
+    inputData.area = $ticketArea.value.trim()
+    inputData.remaining = $ticketRemaining.value.trim()
+    inputData.introduction = $ticketIntroduction.value.trim()
+    inputData.score = $ticketScore.value.trim()
+    inputData.price = $ticketPrice.value.trim()
+    travelCardData.unshift(inputData)
+    form.reset();
+    init(travelCardData);    
+}
+
 init();
 filter();

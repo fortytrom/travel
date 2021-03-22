@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>title</title>
+    <title>新增旅遊套票</title>
     <!-- css引入 -->
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
@@ -35,25 +35,25 @@
                         <form action="" class="form form_quiet">
                             <ul>
                                 <li class="g_form_item">
-                                    <label class="form-label" for="exampleFormControlInput1">套票名稱</label>
+                                    <label class="form-label" for="ticketName">套票名稱</label>
                                     <div class="form-control">
                                         <input class="input" type="text" placeholder="請填寫套票名稱"
-                                            id="exampleFormControlInput1">
+                                            id="ticketName">
                                             <p class="alert">lorem</p>
                                     </div>
                                 </li>
                                 <li class="g_form_item">
-                                    <label class="form-label" for="exampleFormControlInput1">圖片網址</label>
+                                    <label class="form-label" for="ticketImgUrl">圖片網址</label>
                                     <div class="form-control">
                                         <input class="input" type="text" placeholder="請填寫圖片網址"
-                                            id="exampleFormControlInput1">
+                                            id="ticketImgUrl">
                                             <p class="alert">lorem</p>
                                     </div>
                                 </li>
                                 <li class="g_form_item">
-                                    <label class="form-label" for="exampleFormControlInput1">景點地區</label>
+                                    <label class="form-label" for="ticketArea">景點地區</label>
                                     <div class="form-control select">
-                                        <select name="" id="">
+                                        <select name="ticketArea" id="ticketArea">
                                             <option disabled selected hidden>請選擇景點地區</option>
                                             <option value="台北">台北</option>
                                             <option value="台中">台中</option>
@@ -63,26 +63,26 @@
                                     </div>
                                 </li>
                                 <li class="g_form_item">
-                                    <label class="form-label" for="exampleFormControlInput1">套票金額</label>
+                                    <label class="form-label" for="ticketPrice">套票金額</label>
                                     <div class="form-control">
-                                        <input class="input" type="number" placeholder="請填寫套票金額"
-                                            id="exampleFormControlInput1">
+                                        <input class="input" type="text" placeholder="請填寫套票金額"
+                                            id="ticketPrice">
                                             <p class="alert">lorem</p>
                                     </div>
                                 </li>
                                 <li class="g_form_item">
-                                    <label class="form-label" for="exampleFormControlInput1">套票組數</label>
+                                    <label class="form-label" for="ticketRemaining">套票組數</label>
                                     <div class="form-control">
-                                        <input class="input" type="number" placeholder="請填寫套票組數"
-                                            id="exampleFormControlInput1">
+                                        <input class="input" type="text" placeholder="請填寫套票組數"
+                                            id="ticketRemaining">
                                             <p class="alert">lorem</p>
                                     </div>
                                 </li>
                                 <li class="g_form_item">
-                                    <label class="form-label" for="exampleFormControlInput1">套票星級</label>
+                                    <label class="form-label" for="ticketScore">套票星級</label>
                                     <div class="form-control">
                                         <input class="input" type="text" placeholder="請填寫套票星級"
-                                            id="exampleFormControlInput1">
+                                            id="ticketScore">
                                             <p class="alert">lorem</p>
                                     </div>
                                 </li>
@@ -90,12 +90,12 @@
                                     <label class="form-label" for="">套票描述</label>
                                     <div class="form-control">
                                         <textarea rows="5" class="input" type="text" placeholder="請填寫套票描述（限 100 字）"
-                                            id=""></textarea>
+                                            id="ticketIntroduction"></textarea>
                                             <p class="alert">lorem</p>
                                     </div>
                                 </li>
                                 <li class="g_form_item justify-content-end">
-                                    <button class="button button_primary">新增套票</button>
+                                    <button class="button button_primary" id="ticketSubmit" type="reset">新增套票</button>
                                 </li>
                             </ul>
                         </form>
@@ -123,32 +123,6 @@
         </div>
         <div class="main">
             <ul class="travelCard_list row">
-                <!-- <li class="item col-12 col-md-6 col-lg-4">
-                    <div class="g_travelCard">
-                        <div class="tag_area">台北</div>
-                        <div class="cover">
-                            <div class="pb" style="background: url(images/photo-1477894387642-00a731c511b3@2x.png);background-size: cover;">
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="tag_scroe">5.3</div>
-                            <h2 class="info_title">綠島自由行套裝行程</h2>
-                            <p class="info_introdution">嚴選超高CP值綠島自由行套裝行程，多種綠島套體驗』以及『綠島生態導覽』，讓你用輕鬆的綠島套裝自由行，也能深度認識綠島在地文化。</p>
-                            <div class="row font_main align-items-center ">
-                                <div class="col-6">
-                                    <i class="fas fa-exclamation-circle"></i>
-                                    <span>剩下最後<span>8</span>組</span>
-                                </div>
-                                <div class="col-6 text_right">
-                                    <span class="g_price">
-                                        <span>TWD </span>
-                                        <span class="price"><span>$</span><span>1,280</span></span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li> -->
             </ul>
         </div>
     </section>
